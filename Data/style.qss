@@ -1,0 +1,188 @@
+ QWidget {
+     background-color: #2b2b2b;
+     color: #ffffff;  /* Цвет текста для всех виджетов по умолчанию */     
+ }
+
+ #title_label {
+    text: SoundValve;
+    font-size: 14px;
+    color: orange;
+ }
+
+ #track_info_label {
+    max-height: 11px;
+    font-size: 11px;
+    color: orange;
+ }
+
+ #track_label {
+    font-size: 14px;
+    color: orange;
+ }
+
+ #position_label_left {
+    font-size: 11px;
+    color: orange;
+ }
+
+ #position_label_right {
+    font-size: 11px;
+    color: orange;
+ }
+
+QToolTip {
+    background-color: #5e5e5e;
+    color: #ffffff;  /* Цвет текста при наведении */
+    border-radius: 3px;
+}
+ 
+QPushButton {
+   background: none;
+   border: none;
+   border-radius: 5px;
+   padding: 0px;
+   margin: 0px;
+   transition: all 0.1s ease; /* Добавим плавный переход */
+ }
+
+ QPushButton:pressed {
+    border-radius: 9px;
+    padding: 10px; /* Увеличиваем отступы */
+    margin: -1px; /* Сдвигаем кнопку, чтобы визуально уменьшить её размер */
+}
+
+ QPushButton:hover {
+    background-color: #3e3e3e;
+ }
+
+ QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 10px;
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #B1B1B1, stop:1 #c4c4c4);
+    margin: 0px 0;
+    border-radius: 5px;
+ }
+
+ QSlider::handle:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #eeeeee, stop:1 #CCCCCC);
+    border: 0px solid #5c5c5c;
+    width: 19px;
+    margin: -1px 0;
+    border-radius: 5px;
+ }
+
+ QSlider::add-page:horizontal {
+    background: #575757;
+    border-radius: 5px;
+ }
+
+ QSlider::sub-page:horizontal {
+    background: orange; /* Измените цвет на оранжевый */
+    border-radius: 5px;
+ }
+
+
+ QListWidget {
+    background-color: #2e2e2e;
+    color: #ffffff;  /* Цвет текста для всех элементов */
+    border: 1px solid #444444;
+    padding: 1px;
+    
+ }
+
+ QListWidget::item {
+    background-color: #3e3e3e;
+    color: orange;  /* Цвет текста по умолчанию */
+    padding: 1px;
+    border: 1px solid #555555;
+    margin: 1px;
+    border-radius: 5px;
+ }
+
+ QListWidget::item:selected {
+    background-color: orange;
+    color: #ffffff;  /* Цвет текста для выбранного элемента */
+    border-radius: 5px;
+ }
+
+ QListWidget::item:hover {
+    background-color: #5e5e5e;
+    color: #ffffff;  /* Цвет текста при наведении */
+    border-radius: 5px;
+ }
+
+   /* Стиль для вертикального скроллбара */
+ QScrollBar:vertical {
+    border: 1px solid #444444;
+    background: #2e2e2e;
+    width: 10px;
+    margin: 15px 0 15px 0;
+ }
+
+ QScrollBar::handle:vertical {
+    background: orange;
+    min-height: 10px;
+ }
+
+ QScrollBar::add-line:vertical {
+    background: #444444;
+    height: 15px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+ }
+        
+ QScrollBar::sub-line:vertical {            
+    background: #444444;            
+    height: 15px;           
+    subcontrol-position: top;            
+    subcontrol-origin: margin;
+ }
+
+ QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical {
+    border: 2px solid #444444;
+    width: 3px;
+    height: 3px;
+    background: #ffffff;
+ }
+
+ QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: none;
+ }
+
+   /* Стиль для горизонтального скроллбара */
+ QScrollBar:horizontal {
+    border: 1px solid #444444;
+    background: #2e2e2e;
+    height: 8px;
+    margin: 0 15px 0 15px;
+ }
+
+ QScrollBar::handle:horizontal {
+    background: orange;
+    min-width: 8px;
+ }
+
+ QScrollBar::add-line:horizontal {
+    background: #444444;
+    width: 15px;
+    subcontrol-position: right;
+    subcontrol-origin: margin;
+ }
+
+ QScrollBar::sub-line:horizontal {
+    background: #444444;
+    width: 15px;
+    subcontrol-position: left;
+    subcontrol-origin: margin;
+ }
+
+ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
+    border: 2px solid #444444;
+    width: 3px;
+    height: 3px;
+    background: #ffffff;
+ }
+
+ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
+    background: none;
+ }
